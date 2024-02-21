@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  position: relative;
+}
+
+.header-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-logo {
+  width: 30%;
+  flex-shrink: 0;
+  /* フレックスコンテナ内での縮小を防ぐ */
+}
+
+.header-links {
+  display: flex;
+  justify-content: flex-end;
+  /* 右寄せにする */
+  width: 65%;
+  /* リンクのスペースを増やすために変更 */
+}
+
+.header-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-link:not(:last-child) {
+  margin-right: 8px;
+}
+
+.header-link img {
+  max-height: 28px;
+  width: auto;
+  margin-bottom: 4px;
+}
+
+.header-link a {
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  /* テキストと画像の中央揃えのために追加 */
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-link p {
+  font-size: 8px;
+}
+
+.header button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+}

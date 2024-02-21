@@ -1,0 +1,14 @@
+.input {
+    height: 40px;
+    width: 100%;
+    background-color: #f8f8f8 !important;
+    font-size: 16px;
+    padding: 0px 8px;
+    border: 1px solid #cacaca;
+    outline: none;
+}
+
+.input:focus {
+    box-shadow: 0 0 2px #cacaca;
+    /* オプション: フォーカス時の影 */
+}

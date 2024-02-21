@@ -1,0 +1,38 @@
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.content div {
+  font-size: 16px;
+}
+
+.tab {
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border: none;
+  border-bottom: #cdcdcd solid 1px;
+  color: #999;
+  font-size: 14px !important;
+  width: 100%;
+}
+
+.tab.active {
+  background-color: #fff;
+  font-weight: bold;
+  border-bottom: #ff565f solid 4px;
+  color: #000;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  /* ヘッダーなどの高さを引く */
+  min-height: calc(100vh - 116px);
+  box-shadow: -4px 0 4px rgba(0, 0, 0, 0.1), 4px 0 4px rgba(0, 0, 0, 0.1);
+  padding: 0px 24px;
+  border-radius: 0px 0px 16px 16px;
+}
